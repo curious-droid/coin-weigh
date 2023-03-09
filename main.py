@@ -180,10 +180,10 @@ def runAlgo():  # algorithm
             prevl = curl
             curl += minimumsize
 
-
 while True:
     random.shuffle(S)  # randomize order of S
     for i in range(2, 6070):  # test all possible values of X
+        weighs = 0
         X = i
         sum = runAlgo()  # run algorithm
         if sum != X or weighs > 10000:  # if failed, print error message
